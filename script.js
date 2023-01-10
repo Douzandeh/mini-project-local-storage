@@ -25,8 +25,25 @@
 // }else{
 //     console.log("You have not access");
 // }
-
+// ? Boolean value in local storage
 
 // ? Clear local storage
-localStorage.removeItem("firstName")
-localStorage.clear()
+// localStorage.removeItem("firstName")
+// localStorage.clear()
+// ? Clear local Storage
+
+
+
+// ? Save the object
+let person = {
+    firstName: "Hossein",
+    lastName: "Douzandeh",
+    age: 22,
+    access: true,
+}
+// ? JSON.stringify
+person = JSON.stringify(person)
+console.log(person);
+
+
+localStorage.setItem("person" , person)
