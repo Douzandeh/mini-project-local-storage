@@ -35,15 +35,27 @@
 
 
 // ? Save the object
-let person = {
-    firstName: "Hossein",
-    lastName: "Douzandeh",
-    age: 22,
-    access: true,
+// let person = {
+//     firstName: "Hossein",
+//     lastName: "Douzandeh",
+//     age: 22,
+//     access: true,
+// }
+// ? Method JSON.stringify
+// person = JSON.stringify(person)
+// console.log(person);
+
+
+// localStorage.setItem("person" , person)
+
+
+let person = localStorage.getItem("person")
+// ? Method ParseInt
+person = JSON.parse(person)
+// console.log(person);
+
+if(person.access){
+    console.log("You have access");
+}else{
+    console.log("You have not access");
 }
-// ? JSON.stringify
-person = JSON.stringify(person)
-console.log(person);
-
-
-localStorage.setItem("person" , person)
